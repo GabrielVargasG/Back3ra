@@ -27,11 +27,6 @@ const registarNiveles = async(req, res = response) => {
         {  nombre: "Nivel 13", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel13"},
         {  nombre: "Nivel 14", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel14"},
         {  nombre: "Nivel 15", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel15"},
-        {  nombre: "Nivel 16", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel16"},
-        {  nombre: "Nivel 17", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel17"},
-        {  nombre: "Nivel 18", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel18"},
-        {  nombre: "Nivel 19", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel19"},
-        {  nombre: "Nivel 20", completo: "false", usuario:req.usuario._id, valor: 0, grado: "1",action:"Nivel20"},
         
         // Niveles de segundo grado
         {  nombre: "Nivel 1", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel1_2"},
@@ -49,11 +44,6 @@ const registarNiveles = async(req, res = response) => {
         {  nombre: "Nivel 13", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel13_2"},
         {  nombre: "Nivel 14", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel14_2"},
         {  nombre: "Nivel 15", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel15_2"},
-        {  nombre: "Nivel 16", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel16_2"},
-        {  nombre: "Nivel 17", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel17_2"},
-        {  nombre: "Nivel 18", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel18_2"},
-        {  nombre: "Nivel 19", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel19_2"},
-        {  nombre: "Nivel 20", completo: "false", usuario:req.usuario._id, valor: 0, grado: "2",action:"Nivel20_2"},
     ];
     // Guardar DB
     const nuevoNivel = await Nivel.insertMany(docs);
